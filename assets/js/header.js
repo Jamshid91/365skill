@@ -1,14 +1,16 @@
-const menu_btn = document.querySelector('.menu-btn');
+const menu_btn = document.querySelectorAll('.menu_btn');
 const menu = document.querySelector('.menu');
 const list_li = document.querySelectorAll('.list_li span');
 const back_btn = document.querySelectorAll('.back-btn');
 const title_btn = document.querySelectorAll('.title_btn');
 const menu_list_div = document.querySelectorAll('.menu-list_div');
 
-menu_btn.addEventListener('click', () => {
-    menu.classList.toggle('showMenu');
-    menu_btn.classList.toggle('clickedMenu')
-});
+menu_btn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('showMenu');
+        btn.classList.toggle('clickedMenu')
+    });
+})
 
 window.addEventListener('click', (e) => {
     if(e.target == menu) {

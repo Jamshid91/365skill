@@ -12,17 +12,18 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
+                    <div class="d-none d-md-flex align-items-center">
                         <a href="#" class="header-logo">365skill</a>
-                        <div class="menu-btn">
+                        <div class="menu-btn menu_btn">
                             <img src="assets/img/svg/burger.svg" alt="">
                             <img src="assets/img/svg/close.svg" alt="">
                         </div>
                     </div>
                     <div class="search">
                         <input type="text" class="search__inp" placeholder="Найти на 365skill">
+                        <img src="assets/img/svg/search.svg" alt="" class="search-icon d-block d-md-none">
                     </div>
-                    <div class="d-flex">
+                    <div class="d-none d-md-flex">
                         <a href="#" class="header-link d-flex align-items-center flex-column justify-content-between">
                             <img src="assets/img/svg/favorites.svg" alt="">
                             <span>Избранное</span>
@@ -156,6 +157,23 @@
                 </ul>
             </div>
         </div>
+        <div class="header-mobile d-md-none d-flex align-items-center justify-content-between">
+            <a href="./index.html">
+                <img src="assets/img/svg/home.svg" alt="">
+            </a>
+            <button class="menu_btn">
+                <img src="assets/img/svg/catalog.svg" alt="">
+            </button>
+            <a href="./index.html">
+                <img src="assets/img/svg/basket-m.svg" alt="">
+            </a>
+            <a href="./index.html">
+                <img src="assets/img/svg/heart-m.svg" alt="">
+            </a>
+            <a href="./index.html">
+                <img src="assets/img/svg/login-m.svg" alt="">
+            </a>
+        </div>
     </header>
 
     <main class="main">
@@ -173,6 +191,20 @@
 
        <div class="products">
         <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end">
+                    <div class="products-view">
+                        <button class="view-small">
+                            <img src="assets/img/svg/col_4.svg" class="d-none d-sm-block" alt="">
+                            <img src="assets/img/svg/view-m.svg" class="d-sm-none" alt="">
+                        </button>
+                        <button class="view-all active">
+                            <img src="assets/img/svg/col_4.svg" class="d-sm-none" alt="">
+                            <img src="assets/img/svg/col_6.svg" class="d-none d-sm-block" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="products-box">
