@@ -1,5 +1,6 @@
 const menu_btn = document.querySelectorAll('.menu_btn');
 const menu = document.querySelector('.menu');
+const body = document.querySelector('body');
 const list_li = document.querySelectorAll('.list_li span');
 const back_btn = document.querySelectorAll('.back-btn');
 const title_btn = document.querySelectorAll('.title_btn');
@@ -9,6 +10,7 @@ menu_btn.forEach(btn => {
     btn.addEventListener('click', () => {
         menu.classList.toggle('showMenu');
         btn.classList.toggle('clickedMenu')
+        body.classList.toggle('bodyStopScroll')
     });
 })
 
