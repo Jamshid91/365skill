@@ -105,7 +105,7 @@ input, textarea, select, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
@@ -327,7 +327,7 @@ input, textarea, select, button {
 }
 
 .main .banner {
-  margin: 70px 0 40px;
+  margin: 50px 0 40px;
 }
 .main .banner-img {
   width: 100%;
@@ -337,7 +337,7 @@ input, textarea, select, button {
   margin-bottom: 170px;
 }
 .main .products-view .view-small {
-  margin-right: 12px;
+  margin-right: 10px;
   opacity: 0.3;
 }
 .main .products-view .view-all {
@@ -362,8 +362,8 @@ input, textarea, select, button {
 }
 .main .products .product-photo {
   width: 100%;
-  height: 287px;
-  border-radius: 20px;
+  min-height: 287px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .main .products .product-photo .photo {
@@ -376,7 +376,7 @@ input, textarea, select, button {
   background: transparent;
   position: absolute;
   top: 9.5px;
-  right: 8.5px;
+  right: 9.5px;
   z-index: 3;
   transition: 0.3s all;
 }
@@ -409,14 +409,14 @@ input, textarea, select, button {
   color: #fff;
 }
 .main .products .product-photo .product-offer .sale {
-  border-radius: 6px;
+  border-radius: 2px;
   background: #9C01A2;
   padding: 1px 4px;
   display: inline-block;
   margin-bottom: 5px;
 }
 .main .products .product-photo .product-offer .good-price {
-  border-radius: 6px;
+  border-radius: 2px;
   background: linear-gradient(90deg, #3B4DBE 0%, #0589DC 97%);
   padding: 1px 4px;
 }
@@ -425,6 +425,7 @@ input, textarea, select, button {
   margin-top: -1px;
 }
 .main .products .product-info {
+  height: 100%;
   padding-top: 12px;
   font-size: 14px;
   color: #868695;
@@ -438,7 +439,7 @@ input, textarea, select, button {
   margin-right: 5px;
 }
 .main .products .product-name {
-  margin: 7px 0;
+  margin: 5px 0;
   overflow-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -461,8 +462,8 @@ input, textarea, select, button {
 }
 .main .products .product .addTo-cart {
   width: 100%;
-  height: 36px;
-  border-radius: 10px;
+  height: 42px;
+  border-radius: 4px;
   background: #3B4DBE;
   color: #fff;
   font-size: 14px;
@@ -484,7 +485,7 @@ input, textarea, select, button {
   grid-template-columns: repeat(4, 1fr) !important;
 }
 .main .viewProducts .product-photo {
-  height: 451px;
+  min-height: 451px;
 }
 
 .footer {
@@ -929,13 +930,13 @@ input, textarea, select, button {
     margin-top: 15px;
   }
   .main .products .products-box .product-photo {
-    height: 240px;
+    min-height: 240px;
   }
   .main .viewProducts {
     grid-template-columns: repeat(1, 1fr) !important;
   }
   .main .viewProducts .product-photo {
-    height: 490px !important;
+    min-height: 490px !important;
   }
   .footer {
     padding: 20px 0 40px;

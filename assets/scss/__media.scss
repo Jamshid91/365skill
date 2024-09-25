@@ -172,7 +172,7 @@
         margin-top: 15px;
         .product {
           &-photo {
-            height: 240px;
+            min-height: 240px;
           }
         }
       }
@@ -181,7 +181,7 @@
       grid-template-columns: repeat(1, 1fr) !important;
       .product {
         &-photo {
-          height: 490px !important;
+          min-height: 490px !important;
 
         }
       }
