@@ -951,15 +951,7 @@ input, textarea, select, button {
 }
 @media (max-width: 420px) {
   .main .banner {
-    bottom: 30px 0 20px;
-  }
-  .main .banner .container {
-    padding: 0;
-  }
-  .main .banner-img {
-    width: 100%;
-    height: 70px;
-    object-fit: cover;
+    bottom: 20px 0 15px;
   }
   .main .products .products-box {
     grid-row-gap: 25px;
