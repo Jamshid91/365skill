@@ -86,10 +86,37 @@ input, textarea, select, button {
   background-image: url(../img/png/header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 22px 0;
+  padding: 15px 0 25px;
   color: #fff;
   position: relative;
   z-index: 99;
+}
+.header-top {
+  margin-bottom: 13px;
+}
+.header-top .top-link {
+  padding: 2px 3px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5019607843);
+  border: 1px solid transparent;
+  opacity: 0.8;
+  margin-right: 7px;
+  display: inline-block;
+}
+.header-top .top-link:last-child {
+  margin-right: 0;
+  backdrop-filter: blur(18px);
+  opacity: 1;
+  border: 1px solid #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.4666666667);
+  border-right-color: rgba(255, 255, 255, 0.3333333333);
+  padding: 2px 10px;
+}
+.header-top .top-link:hover {
+  opacity: 1;
+  backdrop-filter: none;
 }
 .header-logo {
   font-size: 30px;
@@ -97,11 +124,11 @@ input, textarea, select, button {
   font-weight: 700;
   line-height: normal;
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 32px;
 }
 .header .menu-btn {
-  width: 58px;
-  height: 58px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +147,7 @@ input, textarea, select, button {
 }
 .header .search {
   width: 100%;
-  margin: 0 40px 0 50px;
+  margin: 0 20px 0;
   position: relative;
 }
 .header .search-icon {
@@ -130,8 +157,8 @@ input, textarea, select, button {
 }
 .header .search__inp {
   width: 100%;
-  height: 58px;
-  padding: 19px 100.39px 18px 20px;
+  height: 50px;
+  padding: 0 20px;
   background: #fff;
   border-radius: 12px;
   transition: 0.3s all;
@@ -326,15 +353,15 @@ input, textarea, select, button {
   background: transparent;
 }
 
+.main {
+  padding-bottom: 57px;
+}
 .main .banner {
   margin: 50px 0 40px;
 }
 .main .banner-img {
   width: 100%;
   object-fit: contain;
-}
-.main .products {
-  margin-bottom: 170px;
 }
 .main .products-view .view-small {
   margin-right: 10px;
@@ -486,6 +513,35 @@ input, textarea, select, button {
 }
 .main .viewProducts .product-photo {
   min-height: 451px;
+}
+.main .btn-scrollTop {
+  width: 97px;
+  height: 37px;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #242424;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 38, 0.2);
+  margin: 24px auto 0;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.main .btn-scrollTop:hover {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 38, 0.2);
+}
+.main .btn-scrollTop .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #EBF0FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
 }
 
 .footer {

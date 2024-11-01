@@ -5,6 +5,7 @@ const list_li = document.querySelectorAll('.list_li span');
 const back_btn = document.querySelectorAll('.back-btn');
 const title_btn = document.querySelectorAll('.title_btn');
 const menu_list_div = document.querySelectorAll('.menu-list_div');
+const btn_scrollTop = document.querySelector('.btn-scrollTop');
 
 menu_btn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -14,12 +15,13 @@ menu_btn.forEach(btn => {
     });
 })
 
-window.addEventListener('click', (e) => {
-    if(e.target == menu) {
-        menu.classList.remove('showMenu');
-        menu_btn.classList.remove('clickedMenu')
-  }
-});
+// window.addEventListener('click', (e) => {
+//     if(e.target == menu) {
+//         menu.classList.toggle('showMenu');
+//         btn.classList.toggle('clickedMenu')
+//         body.classList.toggle('bodyStopScroll')
+//   }
+// });
 
 list_li.forEach(list => {
     list.addEventListener('click', () => {
@@ -49,4 +51,9 @@ title_btn.forEach(btn => {
     btn.addEventListener('click', () => {
         btn.parentElement.classList.add('d-none')
     })
+});
+
+btn_scrollTop.addEventListener('click', () => {
+    // alert()
+    window.scrollTo(0,0)
 })
