@@ -173,6 +173,9 @@
         .product {
           &-photo {
             min-height: 240px;
+          }  
+          &-info {
+            height: 200px;
           }
         }
       }
@@ -182,7 +185,9 @@
       .product {
         &-photo {
           min-height: 490px !important;
-
+        }  
+        &-info {
+          height: auto !important;
         }
       }
     }
